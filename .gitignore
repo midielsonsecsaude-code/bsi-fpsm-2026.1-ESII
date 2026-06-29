@@ -15,3 +15,6 @@ solucao/
 solucao-professor/
 gabarito*/
 **/solucao/
+
+# pytest
+.pytest_cache/
