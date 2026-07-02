@@ -1,7 +1,7 @@
-# Configuração do linter (ruff) e da cobertura deste projeto.
-# O ruff confere ESTILO (linhas longas, imports/variáveis não usados...).
-# Ele NÃO reclama de "método longo" nem de "nome ruim" — esses são code
-# smells de DESIGN, que só o olho humano e o refactoring resolvem.
+# Configuração das ferramentas de qualidade deste projeto.
+# - ruff: confere o ESTILO do código (linhas muito longas, imports e
+#   variáveis não usados, espaços fora do lugar).
+# - coverage: mede quanto do código os testes exercitam.
 
 [tool.ruff]
 line-length = 100
