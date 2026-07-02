@@ -53,23 +53,6 @@ def test_observador_inscrito_recebe_o_evento():
 
 
 # ------------------------------------------------------------------
-# TODO (Parte B): adicione uma forma de entrega nova — o DRONE.
-#
-#   1. Em acaiteria.py, crie a estratégia (taxa fixa 8 + 3 por km):
-#
-#          class EntregaDrone(Entrega):
-#              def preco(self, distancia_km):
-#                  return 8.0 + 3.0 * distancia_km
-#
-#   2. Registre o drone na fábrica criar_entrega (UMA linha no dicionário):
-#
-#          "drone": EntregaDrone,
-#
-#   3. SÓ DEPOIS de fazer os passos 1 e 2 acima, escreva aqui o teste do
-#      drone e rode pytest (só descomentar este teste, sem os passos 1 e 2,
-#      dá erro de import — não "7 passed"):
-#
-#          def test_drone_cobra_taxa_fixa_mais_por_km():
-#              from acaiteria import EntregaDrone
-#              assert EntregaDrone().preco(2) == 14.0      # 8 + 3*2
-# ------------------------------------------------------------------
+# TODO def test_drone_cobra_taxa_fixa_mais_por_km():
+from acaiteria import EntregaDrone
+assert EntregaDrone().preco(2) == 14.0 # 8 + 3*2

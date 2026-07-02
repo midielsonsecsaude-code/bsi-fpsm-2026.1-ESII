@@ -49,6 +49,7 @@ def criar_entrega(nome):
         "moto": EntregaMoto,
         "bici": EntregaBicicleta,
         "retirada": Retirada,
+        "drone": EntregaDrone,
     }
     if nome not in opcoes:
         raise ValueError(f"forma de entrega desconhecida: {nome!r}")
