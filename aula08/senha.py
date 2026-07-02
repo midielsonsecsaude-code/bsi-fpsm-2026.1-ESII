@@ -11,8 +11,9 @@
 def validar(senha):
     regras = [
         (len(senha) >= 8,                 "precisa de pelo menos 8 caracteres"),
-        (any(c.isdigit() for c in senha), "precisa de um número"),
+        (any(c.isdigit() for c in senha), "precisa de um número"), 
         (any(c.isupper() for c in senha), "precisa de uma letra maiúscula"),
+        (any(c.islower() for c in senha), "precisa de uma letra minúscula"),
     ]
     problemas = []
     for ok, mensagem in regras:
