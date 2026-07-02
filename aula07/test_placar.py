@@ -10,9 +10,6 @@ def test_vitoria_quando_a_casa_faz_mais_gols():
 
 
 # ------------------------------------------------------------------
-# TODO (Parte B): escreva abaixo UM teste para o caso de EMPATE.
-#   - crie uma funcao:  def test_empate_quando_o_placar_e_igual():
-#   - dentro dela, um assert verificando que  resultado(1, 1) == "empate"
-#
-# Depois rode  pytest  e confira: devem aparecer 2 passed.
-# ------------------------------------------------------------------
+# TODO def test_empate_quando_o_placar_e_igual():
+assert resultado(1, 1) == "empate"
+ 
